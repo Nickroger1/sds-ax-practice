@@ -1,6 +1,6 @@
 # eval.py - 평가 세트 자동 채점
 import json
-from rag_chain_04 import rag_chain, retriever
+from rag_chain import rag_chain, retriever
 
 PASS_THRESHOLD = 4   # 2일차 성공 기준: 5문항 중 4문항 이상 정답
 

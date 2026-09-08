@@ -1,17 +1,8 @@
 # vectorstore.py - 벡터 저장소 구축과 디스크 저장
-import importlib.util
-from pathlib import Path
-
 from dotenv import load_dotenv
 from langchain_aws import BedrockEmbeddings
 from langchain_chroma import Chroma
-
-_spec = importlib.util.spec_from_file_location(
-    "metadata", Path(__file__).parent / "metadata_02.py"
-)
-_metadata = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_metadata)
-load_chunks = _metadata.load_chunks
+from metadata import load_chunks
 
 load_dotenv()
 embeddings = BedrockEmbeddings(

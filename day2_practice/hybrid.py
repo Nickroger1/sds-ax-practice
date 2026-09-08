@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 from langchain_community.retrievers import BM25Retriever
 from langchain_classic.retrievers import EnsembleRetriever
 from kiwipiepy import Kiwi
-from metadata_02 import load_chunks
-from rag_chain_04 import db
+from metadata import load_chunks
+from rag_chain import db
 
 load_dotenv()
 kiwi = Kiwi()

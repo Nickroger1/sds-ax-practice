@@ -1,14 +1,5 @@
 # verify.py - RAG 유무 비교 검증
-import importlib.util
-from pathlib import Path
-
-_spec = importlib.util.spec_from_file_location(
-    "rag_chain", Path(__file__).parent / "rag_chain_04.py"
-)
-_rag_chain = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_rag_chain)
-rag_chain = _rag_chain.rag_chain
-llm = _rag_chain.llm
+from rag_chain import rag_chain, llm
 
 def get_text(message):
     """ChatBedrockConverse는 content를 블록 리스트로 주기도 하므로 텍스트만 모아 반환합니다."""

@@ -1,13 +1,5 @@
 # failures.py - 검색 실패 재현
-import importlib.util
-from pathlib import Path
-
-_spec = importlib.util.spec_from_file_location(
-    "rag_chain", Path(__file__).parent / "rag_chain_04.py"
-)
-_rag_chain = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_rag_chain)
-db = _rag_chain.db
+from rag_chain import db
 
 fail_queries = [
     "출장 신청서 TR-102 어디서 내?",   # 유형 1: 고유 기호

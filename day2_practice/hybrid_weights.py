@@ -1,5 +1,5 @@
 from langchain_classic.retrievers import EnsembleRetriever
-from hybrid_05 import bm25, vector
+from hybrid import bm25, vector
 
 # hybrid_weights.py - 가중치 조정 실험 (hybrid.py에 이어서)
 for w in [0.2, 0.5, 0.8]:

@@ -1,16 +1,6 @@
 # verify_sources.py - 근거 문서를 함께 반환
-import importlib.util
-from pathlib import Path
-
 from langchain_core.runnables import RunnableParallel
-
-_spec = importlib.util.spec_from_file_location(
-    "rag_chain", Path(__file__).parent / "rag_chain_04.py"
-)
-_rag_chain = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_rag_chain)
-rag_chain = _rag_chain.rag_chain
-retriever = _rag_chain.retriever
+from rag_chain import rag_chain, retriever
 
 rag_with_sources = RunnableParallel(
     answer=rag_chain,

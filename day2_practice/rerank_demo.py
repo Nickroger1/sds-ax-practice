@@ -1,6 +1,6 @@
 # rerank_demo.py - 재랭킹 전후 순위 비교
 from sentence_transformers import CrossEncoder
-from hybrid_05 import hybrid
+from hybrid import hybrid
 
 # 다국어 재랭킹 모델 (한국어 지원, 최초 실행 시 다운로드)
 reranker = CrossEncoder("BAAI/bge-reranker-v2-m3")
