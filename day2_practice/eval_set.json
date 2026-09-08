@@ -1,0 +1,34 @@
+[
+  {
+    "question": "연차 이월은 며칠까지 가능한가요?",
+    "expected_source": "docs/leave_policy.md",
+    "type": "fact"
+  },
+  {
+    "question": "월차 얼마나 받을 수 있어?",
+    "expected_source": "docs/leave_policy.md",
+    "type": "paraphrase"
+  },
+  {
+    "question": "집에서 일하려면 어떻게 신청해?",
+    "expected_source": "docs/remote_work_policy.md",
+    "type": "paraphrase"
+  },
+  {
+    "question": "해외 출장 식비 한도는 하루 얼마인가요?",
+    "expected_source": "docs/travel_policy.md",
+    "type": "fact"
+  },
+  {
+    "question": "육아휴직은 얼마나 쓸 수 있나요?",
+    "expected_source": null,
+    "type": "no_answer"
+  },
+
+  {"question": "미사용 연차는 며칠까지 이월되나요?", "expected_source": "docs/leave_policy.md", "type": "fact"},
+  {"question": "안 쓴 휴가 내년으로 넘길 수 있어?", "expected_source": "docs/leave_policy.md", "type": "paraphrase"},
+  {"question": "재택근무 신청서 양식 번호가 뭔가요?", "expected_source": "docs/remote_work_policy.md", "type": "fact"},
+  {"question": "집에서 일하는 날 회사 망은 어떻게 붙어?", "expected_source": "docs/remote_work_policy.md", "type": "paraphrase"},
+  {"question": "경조사 휴가는 며칠인가요?", "expected_source": null, "type": "no_answer"}
+
+]
