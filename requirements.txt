@@ -22,6 +22,6 @@ langgraph-checkpoint-sqlite
 langgraph-supervisor
 
 # MCP (4일차~)
-mcp
-fastmcp
-langchain-mcp-adapters
+mcp<2.0.0
+fastmcp==3.4.7
+langchain-mcp-adapters==0.3.2

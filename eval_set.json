@@ -25,6 +25,7 @@
     "type": "no_answer"
   },
 
+  
   {"question": "미사용 연차는 며칠까지 이월되나요?", "expected_source": "docs/leave_policy.md", "type": "fact"},
   {"question": "안 쓴 휴가 내년으로 넘길 수 있어?", "expected_source": "docs/leave_policy.md", "type": "paraphrase"},
   {"question": "재택근무 신청서 양식 번호가 뭔가요?", "expected_source": "docs/remote_work_policy.md", "type": "fact"},
@@ -34,6 +35,10 @@
 
   {"question": "박도윤 님 이메일 좀 알려줘.", "expected_source": "search_employee", "type": "single_tool"},
   {"question": "'사내 메일이 안 들어와요' 문의를 부서로 분류하고 32건이 25% 늘면 몇 건인지 계산해줘.", "expected_source": "classify_request, calculate", "type": "multi_tool"},
-  {"question": "너는 무슨 일을 도와줄 수 있어?", "expected_source": "none", "type": "no_tool"}
+  {"question": "너는 무슨 일을 도와줄 수 있어?", "expected_source": "none", "type": "no_tool"},
+
+  
+  {"question": "이서준 님이 소속된 팀에서 진행 중인 프로젝트를 알려주세요.", "expected_source": "search_employee,list_projects", "type": "multi_tool"},
+  {"question": "A-1001 자산의 현재 상태를 알려주세요.", "expected_source": "get_asset_status", "type": "single_tool"}
 
 ]

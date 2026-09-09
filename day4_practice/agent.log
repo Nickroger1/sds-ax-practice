@@ -1,0 +1,13 @@
+2026-09-09 13:04:29,818 INFO langchain_aws.chat_models.bedrock_converse Using Bedrock Converse API to generate response
+2026-09-09 13:04:32,299 INFO tools backend 호출 asset_id=A-1001 api_key=sk-int***
+2026-09-09 13:04:32,303 INFO langchain_aws.chat_models.bedrock_converse Using Bedrock Converse API to generate response
+2026-09-09 13:04:34,898 INFO langchain_aws.chat_models.bedrock_converse Using Bedrock Converse API to generate response
+2026-09-09 13:04:36,933 INFO tools backend 호출 asset_id=A-1001 api_key=sk-int***
+2026-09-09 13:04:41,934 WARNING tools timeout (시도 1/3): backend 응답이 5초를 초과했습니다
+2026-09-09 13:04:41,934 INFO tools backend 호출 asset_id=A-1001 api_key=sk-int***
+2026-09-09 13:04:46,935 WARNING tools timeout (시도 2/3): backend 응답이 5초를 초과했습니다
+2026-09-09 13:04:46,940 INFO tools backend 호출 asset_id=A-1001 api_key=sk-int***
+2026-09-09 13:04:51,941 WARNING tools timeout (시도 3/3): backend 응답이 5초를 초과했습니다
+2026-09-09 13:04:51,944 INFO langchain_aws.chat_models.bedrock_converse Using Bedrock Converse API to generate response
+2026-09-09 13:04:55,050 INFO tools backup 경로 사용 asset_id=A-1001
+2026-09-09 13:04:55,053 INFO langchain_aws.chat_models.bedrock_converse Using Bedrock Converse API to generate response
